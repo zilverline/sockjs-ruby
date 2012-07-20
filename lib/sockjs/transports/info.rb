@@ -18,6 +18,7 @@ module SockJS
           response.set_allow_options_post
           response.set_no_cache
           response.write(self.info.to_json)
+          response.finish
         end
       end
 
