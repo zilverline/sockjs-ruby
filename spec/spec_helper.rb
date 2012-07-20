@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+require "thin"
+
 module TransportSpecMacros
   def it_should_have_prefix(prefix)
     it "should have prefix #{prefix}" do
